@@ -1,8 +1,8 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
   #commonweal: /404.html
@@ -29,7 +29,7 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # MathJax Support
@@ -37,7 +37,7 @@ mathjax:
 
 
 # Schemes
-#scheme: Mist
+scheme: Mist
 
 
 # Sidebar, available value:
@@ -79,6 +79,26 @@ duoshuo_info:
 
 # Use velocity to animate everything.
 use_motion: true
+
+avatar: http://tp4.sinaimg.cn/1836010911/180/5614933698/1
+
+# Social links
+social:
+  # github: https://github.com/your-user-name
+  # twitter: https://twitter.com/your-user-name
+  weibo: http://weibo.com/lrzw32
+  # douban: http://douban.com/people/your-user-name
+  # zhihu: http://www.zhihu.com/people/your-user-name
+  # 等等
+
+# JiaThis 分享服务
+jiathis: true
+
+# baidu_analytics
+baidu_analytics: 71a8326527b5fd808db4be0cc7746136
+
+# duoshuo_shortname
+duoshuo_shortname: luopq
 
 # Fancybox
 fancybox: true
