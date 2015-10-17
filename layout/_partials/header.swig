@@ -8,7 +8,7 @@
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
-
+<span class="sub-title">{{ config.subtitle }}</span>
 <div class="site-nav-toggle">
   <button>
     <span class="btn-bar"></span>
