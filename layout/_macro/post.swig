@@ -124,6 +124,8 @@
       {% else %}
         <span itemprop="articleBody">{{ post.content }}</span>
       {% endif  %}
+
+      
     </div>
 
     <footer class="post-footer">
