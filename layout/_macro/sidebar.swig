@@ -23,7 +23,7 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="{{ theme.avatar or url_for(theme.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" itemprop="image"/>
+          <a href="{{url_for(theme.sidebar_menu.about)}}"><img class="site-author-image" src="{{ theme.avatar or url_for(theme.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" itemprop="image" title="{{ theme.author }}"/></a>
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
         </div>
         <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
@@ -50,6 +50,18 @@
           </div>
 
         </nav>
+
+        {% if theme.sidebar_menu %}
+          <div class="feed-link motion-element">
+          {% for name, link in theme.sidebar_menu %}           
+              <a href="{{ url_for(link) }}" rel="alternate">
+                <i class="menu-item-icon icon-next-feed"></i>
+                {{__('sidebar_menu.' + name)}}
+              </a>
+          
+          {% endfor %}
+          </div>
+        {% endif %}
 
         {% if theme.rss %}
           <div class="feed-link motion-element">

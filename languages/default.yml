@@ -16,6 +16,15 @@ sidebar:
   overview: Overview
   toc: Table Of Contents
 
+sidebar_menu:
+  home: Home
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  search: Search
+  books: Books
+
 post:
   posted: Posted on
   in: In
