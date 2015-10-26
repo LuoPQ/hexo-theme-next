@@ -72,7 +72,9 @@
     </header>
 
     <div class="post-body">
+      {% if page.permalink %}
       <p>原文地址：<a href="{{ page.permalink }}">{{ page.permalink }}</a></p>
+      {% endif %}
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
