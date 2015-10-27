@@ -105,6 +105,9 @@ baidu_analytics: 71a8326527b5fd808db4be0cc7746136
 # duoshuo_shortname
 duoshuo_shortname: luopq
 
+# duoshuo_hotartical
+duoshuo_hotartical: true
+
 # Fancybox
 fancybox: true
 
