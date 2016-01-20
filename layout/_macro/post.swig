@@ -72,10 +72,13 @@
     </header>
 
     <div class="post-body">
-      {% if page.permalink %}
-      <p>原文地址：<a href="{{ page.permalink }}">{{ page.permalink }}</a></p>
+      {% if page.info %}
+      <p>{{ page.info }}</p>
+      {% else %}
+        {% if page.permalink %}
+        <p>原文地址：<a href="{{ page.permalink }}">{{ page.permalink }}</a></p>
+        {% endif %}
       {% endif %}
-
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
