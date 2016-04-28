@@ -76,7 +76,7 @@
       <p>{{ page.info }}</p>
       {% else %}
         {% if page.permalink %}
-        <p>原文地址：<a href="{{ page.permalink }}">{{ page.permalink }}</a></p>
+        <p>本文地址：<a href="{{ page.permalink }}">{{ page.permalink }}</a>，转载请注明</p>
         {% endif %}
       {% endif %}
       {# Gallery support #}
