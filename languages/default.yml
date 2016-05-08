@@ -12,6 +12,7 @@ menu:
   search: Search
   books: Books
   works: Works
+  resume: Resume
 
 sidebar:
   overview: Overview
